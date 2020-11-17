@@ -3,27 +3,53 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E614580625648BD0001D696E /* CollectionViewLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614580425648BD0001D696E /* CollectionViewLoadingFooterView.swift */; };
+		E614580725648BD0001D696E /* CollectionViewLoadingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614580525648BD0001D696E /* CollectionViewLoadingFooterView.xib */; };
+		E61B92BA2564312900F03B59 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92B92564312900F03B59 /* BaseViewController.swift */; };
+		E61B92C32564319700F03B59 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92C22564319700F03B59 /* TMDB.swift */; };
+		E61B92C92564330000F03B59 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92C82564330000F03B59 /* Genre.swift */; };
+		E61B92DA2564361E00F03B59 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92D92564361E00F03B59 /* NetworkManager.swift */; };
+		E61B92E52564586C00F03B59 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92E42564586C00F03B59 /* NowPlayingViewController.swift */; };
+		E61B92EA25645BB400F03B59 /* MoviesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92E925645BB400F03B59 /* MoviesResults.swift */; };
+		E61B92EF256468E700F03B59 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92EE256468E700F03B59 /* UIWindow.swift */; };
+		E61B92F225646E7200F03B59 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92F125646E7200F03B59 /* UIView.swift */; };
+		E61B92F9256471F600F03B59 /* MovieGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92F7256471F600F03B59 /* MovieGridCollectionViewCell.swift */; };
+		E61B92FA256471F600F03B59 /* MovieGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61B92F8256471F600F03B59 /* MovieGridCollectionViewCell.xib */; };
+		E61B92FF2564762000F03B59 /* LazyImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92FE2564762000F03B59 /* LazyImageCache.swift */; };
 		E695280825642B0E0068B27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E695280725642B0E0068B27E /* AppDelegate.swift */; };
 		E695280A25642B0E0068B27E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E695280925642B0E0068B27E /* SceneDelegate.swift */; };
-		E695280C25642B0E0068B27E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E695280B25642B0E0068B27E /* ViewController.swift */; };
-		E695280F25642B0E0068B27E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E695280D25642B0E0068B27E /* Main.storyboard */; };
 		E695281125642B0F0068B27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E695281025642B0F0068B27E /* Assets.xcassets */; };
 		E695281425642B0F0068B27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E695281225642B0F0068B27E /* LaunchScreen.storyboard */; };
+		FE85DB7D9F38DDBD9C0B4EE3 /* Pods_WillyWeatheriOSProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F348988434BE187B6789A286 /* Pods_WillyWeatheriOSProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401244EA31803B6089ECCBDB /* Pods-WillyWeatheriOSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WillyWeatheriOSProject.release.xcconfig"; path = "Target Support Files/Pods-WillyWeatheriOSProject/Pods-WillyWeatheriOSProject.release.xcconfig"; sourceTree = "<group>"; };
+		E614580425648BD0001D696E /* CollectionViewLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewLoadingFooterView.swift; path = WillyWeatheriOSProject/Views/CollectionViewLoadingFooterView/CollectionViewLoadingFooterView.swift; sourceTree = SOURCE_ROOT; };
+		E614580525648BD0001D696E /* CollectionViewLoadingFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CollectionViewLoadingFooterView.xib; path = WillyWeatheriOSProject/Views/CollectionViewLoadingFooterView/CollectionViewLoadingFooterView.xib; sourceTree = SOURCE_ROOT; };
+		E61B92B92564312900F03B59 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E61B92C22564319700F03B59 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
+		E61B92C82564330000F03B59 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		E61B92D92564361E00F03B59 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E61B92E42564586C00F03B59 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		E61B92E925645BB400F03B59 /* MoviesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResults.swift; sourceTree = "<group>"; };
+		E61B92EE256468E700F03B59 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		E61B92F125646E7200F03B59 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E61B92F7256471F600F03B59 /* MovieGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		E61B92F8256471F600F03B59 /* MovieGridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieGridCollectionViewCell.xib; sourceTree = "<group>"; };
+		E61B92FE2564762000F03B59 /* LazyImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyImageCache.swift; sourceTree = "<group>"; };
 		E695280425642B0E0068B27E /* WillyWeatheriOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WillyWeatheriOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E695280725642B0E0068B27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E695280925642B0E0068B27E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E695280B25642B0E0068B27E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E695280E25642B0E0068B27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E695281025642B0F0068B27E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E695281325642B0F0068B27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E695281525642B0F0068B27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8856745E2696262E7DC67C /* Pods-WillyWeatheriOSProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WillyWeatheriOSProject.debug.xcconfig"; path = "Target Support Files/Pods-WillyWeatheriOSProject/Pods-WillyWeatheriOSProject.debug.xcconfig"; sourceTree = "<group>"; };
+		F348988434BE187B6789A286 /* Pods_WillyWeatheriOSProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WillyWeatheriOSProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,158 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE85DB7D9F38DDBD9C0B4EE3 /* Pods_WillyWeatheriOSProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73B83156DFAFCC774299FA6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F348988434BE187B6789A286 /* Pods_WillyWeatheriOSProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3AFD2A802BABE0637554016 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF8856745E2696262E7DC67C /* Pods-WillyWeatheriOSProject.debug.xcconfig */,
+				401244EA31803B6089ECCBDB /* Pods-WillyWeatheriOSProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E614580325648BA5001D696E /* CollectionViewLoadingFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				E614580425648BD0001D696E /* CollectionViewLoadingFooterView.swift */,
+				E614580525648BD0001D696E /* CollectionViewLoadingFooterView.xib */,
+			);
+			path = CollectionViewLoadingFooterView;
+			sourceTree = "<group>";
+		};
+		E61B92B7256430F400F03B59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92E32564584300F03B59 /* NowPlayingViewController */,
+				E61B92B82564310E00F03B59 /* BaseController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E61B92B82564310E00F03B59 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92B92564312900F03B59 /* BaseViewController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		E61B92C12564316B00F03B59 /* TMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92C22564319700F03B59 /* TMDB.swift */,
+			);
+			path = TMDB;
+			sourceTree = "<group>";
+		};
+		E61B92C6256432D400F03B59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92E825645B8700F03B59 /* MoviesResults */,
+				E61B92C7256432E100F03B59 /* Genre */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E61B92C7256432E100F03B59 /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92C82564330000F03B59 /* Genre.swift */,
+			);
+			path = Genre;
+			sourceTree = "<group>";
+		};
+		E61B92D82564361300F03B59 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92D92564361E00F03B59 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		E61B92E32564584300F03B59 /* NowPlayingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92E42564586C00F03B59 /* NowPlayingViewController.swift */,
+			);
+			path = NowPlayingViewController;
+			sourceTree = "<group>";
+		};
+		E61B92E825645B8700F03B59 /* MoviesResults */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92E925645BB400F03B59 /* MoviesResults.swift */,
+			);
+			path = MoviesResults;
+			sourceTree = "<group>";
+		};
+		E61B92ED256468D400F03B59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92EE256468E700F03B59 /* UIWindow.swift */,
+				E61B92F125646E7200F03B59 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E61B92F5256471B700F03B59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E614580325648BA5001D696E /* CollectionViewLoadingFooterView */,
+				E61B92F6256471CD00F03B59 /* MovieGridCollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E61B92F6256471CD00F03B59 /* MovieGridCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92F7256471F600F03B59 /* MovieGridCollectionViewCell.swift */,
+				E61B92F8256471F600F03B59 /* MovieGridCollectionViewCell.xib */,
+			);
+			path = MovieGridCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E61B92FC256475EE00F03B59 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92FD2564760600F03B59 /* LazyImage */,
+				E61B92ED256468D400F03B59 /* Extensions */,
+				E61B92D82564361300F03B59 /* NetworkManager */,
+				E61B92C12564316B00F03B59 /* TMDB */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E61B92FD2564760600F03B59 /* LazyImage */ = {
+			isa = PBXGroup;
+			children = (
+				E61B92FE2564762000F03B59 /* LazyImageCache.swift */,
+			);
+			path = LazyImage;
+			sourceTree = "<group>";
+		};
 		E69527FB25642B0D0068B27E = {
 			isa = PBXGroup;
 			children = (
 				E695280625642B0E0068B27E /* WillyWeatheriOSProject */,
 				E695280525642B0E0068B27E /* Products */,
+				D3AFD2A802BABE0637554016 /* Pods */,
+				73B83156DFAFCC774299FA6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +223,12 @@
 		E695280625642B0E0068B27E /* WillyWeatheriOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				E61B92FC256475EE00F03B59 /* Utility */,
+				E61B92C6256432D400F03B59 /* Model */,
+				E61B92F5256471B700F03B59 /* Views */,
+				E61B92B7256430F400F03B59 /* Controllers */,
 				E695280725642B0E0068B27E /* AppDelegate.swift */,
 				E695280925642B0E0068B27E /* SceneDelegate.swift */,
-				E695280B25642B0E0068B27E /* ViewController.swift */,
-				E695280D25642B0E0068B27E /* Main.storyboard */,
 				E695281025642B0F0068B27E /* Assets.xcassets */,
 				E695281225642B0F0068B27E /* LaunchScreen.storyboard */,
 				E695281525642B0F0068B27E /* Info.plist */,
@@ -74,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E695281825642B100068B27E /* Build configuration list for PBXNativeTarget "WillyWeatheriOSProject" */;
 			buildPhases = (
+				E26EEEEECA0574B58DD19F95 /* [CP] Check Pods Manifest.lock */,
 				E695280025642B0E0068B27E /* Sources */,
 				E695280125642B0E0068B27E /* Frameworks */,
 				E695280225642B0E0068B27E /* Resources */,
+				589413E98B0138B881DC3CDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +295,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61B92FA256471F600F03B59 /* MovieGridCollectionViewCell.xib in Resources */,
 				E695281425642B0F0068B27E /* LaunchScreen.storyboard in Resources */,
 				E695281125642B0F0068B27E /* Assets.xcassets in Resources */,
-				E695280F25642B0E0068B27E /* Main.storyboard in Resources */,
+				E614580725648BD0001D696E /* CollectionViewLoadingFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		589413E98B0138B881DC3CDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WillyWeatheriOSProject/Pods-WillyWeatheriOSProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WillyWeatheriOSProject/Pods-WillyWeatheriOSProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WillyWeatheriOSProject/Pods-WillyWeatheriOSProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26EEEEECA0574B58DD19F95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WillyWeatheriOSProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E695280025642B0E0068B27E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E695280C25642B0E0068B27E /* ViewController.swift in Sources */,
+				E61B92E52564586C00F03B59 /* NowPlayingViewController.swift in Sources */,
+				E61B92F9256471F600F03B59 /* MovieGridCollectionViewCell.swift in Sources */,
+				E614580625648BD0001D696E /* CollectionViewLoadingFooterView.swift in Sources */,
 				E695280825642B0E0068B27E /* AppDelegate.swift in Sources */,
+				E61B92F225646E7200F03B59 /* UIView.swift in Sources */,
 				E695280A25642B0E0068B27E /* SceneDelegate.swift in Sources */,
+				E61B92FF2564762000F03B59 /* LazyImageCache.swift in Sources */,
+				E61B92C32564319700F03B59 /* TMDB.swift in Sources */,
+				E61B92DA2564361E00F03B59 /* NetworkManager.swift in Sources */,
+				E61B92EA25645BB400F03B59 /* MoviesResults.swift in Sources */,
+				E61B92C92564330000F03B59 /* Genre.swift in Sources */,
+				E61B92EF256468E700F03B59 /* UIWindow.swift in Sources */,
+				E61B92BA2564312900F03B59 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E695280D25642B0E0068B27E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E695280E25642B0E0068B27E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E695281225642B0F0068B27E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +499,14 @@
 		};
 		E695281925642B100068B27E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8856745E2696262E7DC67C /* Pods-WillyWeatheriOSProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSDMP88D4M;
 				INFOPLIST_FILE = WillyWeatheriOSProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +520,14 @@
 		};
 		E695281A25642B100068B27E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401244EA31803B6089ECCBDB /* Pods-WillyWeatheriOSProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSDMP88D4M;
 				INFOPLIST_FILE = WillyWeatheriOSProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
