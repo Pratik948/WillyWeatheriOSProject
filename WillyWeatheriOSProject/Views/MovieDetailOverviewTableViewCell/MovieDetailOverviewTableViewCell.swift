@@ -15,5 +15,12 @@ class MovieDetailOverviewTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         selectionStyle = .none
+        descriptionLabel.textColor = .lightText
+        if #available(iOS 13, *) {
+            contentView.backgroundColor = .systemBackground
+        }
+        else {
+            contentView.backgroundColor = .black
+        }
     }
 }

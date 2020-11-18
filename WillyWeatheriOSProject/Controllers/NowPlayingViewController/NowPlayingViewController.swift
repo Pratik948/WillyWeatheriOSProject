@@ -33,6 +33,9 @@ class NowPlayingViewController: BaseViewController, Pagination {
         collectionView.register(UINib.init(nibName: "CollectionViewLoadingFooterView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "CollectionViewLoadingFooterView")
         return collectionView
     }()
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +72,10 @@ extension NowPlayingViewController {
     private func setAppearance() {
         view.backgroundColor = .black
         title = "Now Playing"
+        navigationController?.navigationBar.barTintColor = .black
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
@@ -96,12 +103,18 @@ extension NowPlayingViewController {
             switch changes {
             case .error(_):
                 break
-            case .change(let object, _):
-                if let object = object as? NowPlayingMovies {
-                    self?.currentPage = object.page.value ?? 1
-                    self?.totalPage = object.totalPages.value ?? 0
+            case .change(_, let properties):
+                if let page = properties.first(where: { $0.name == "page" })?.newValue as? Int {
+                    self?.currentPage =  page
                 }
-                self?.collectionView.reloadData()
+                if let totalPages = properties.first(where: { $0.name == "totalPages" })?.newValue as? Int {
+                    self?.totalPage = totalPages
+                }
+                self?.collectionView.performBatchUpdates({
+                    self?.collectionView.reloadSections([0])
+                }, completion: { (finishes) in
+                    
+                })
             case .deleted:
                 break
             }
@@ -130,15 +143,18 @@ extension NowPlayingViewController {
                     }
                 }
                 else {
-                    try? realm?.write {
-                        realm?.add(newMovies, update: .all)
-                    }
                     DispatchQueue.main.async {
-//                        if self.nowPlayingMovies == nil {
-//                            self.nowPlayingMovies = realm?.object(ofType: NowPlayingMovies.self, forPrimaryKey: "nowPlayingMoviesResult")
-//                            self.observeNewMovies()
-//                            self.collectionView.reloadData()
-//                        }
+                        let realm = try? Realm()
+                        try? realm?.write {
+                            realm?.add(newMovies, update: .all)
+                        }
+                        if self.nowPlayingMovies == nil {
+                            self.nowPlayingMovies = realm?.object(ofType: NowPlayingMovies.self, forPrimaryKey: "nowPlayingMoviesResult")
+                            self.observeNewMovies()
+                            self.currentPage = self.nowPlayingMovies?.page.value ?? 1
+                            self.totalPage = self.nowPlayingMovies?.totalPages.value ?? 0
+                        }
+                        self.collectionView.reloadData()
                     }
                 }
             }
@@ -169,12 +185,7 @@ extension NowPlayingViewController: UICollectionViewDataSource {
         cell.titleLabel.text = movie?.title
         cell.ratingLabel.text = String.init(format: "Rating: %.2f", (movie?.voteAverage.value ?? 0.0))
         if let posterPath = movie?.posterPath, let url = URL.init(string: TMDB.imageBaseURL + posterPath) {
-            LazyImageCache.shared.load(url: url) { (image) in
-                cell.posterImageView.image = image
-            }
-        }
-        else {
-            cell.posterImageView.image = nil
+            cell.posterImageView.setImage(from: url)
         }
         let genreIds: [Int] = movie?.genreIds.compactMap { $0 } ?? []
         let genres:[Genre] = self.genre?.genres.filter("id IN %@", genreIds).compactMap { $0 } ?? []

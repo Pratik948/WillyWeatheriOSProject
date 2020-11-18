@@ -9,6 +9,11 @@ import UIKit
 import RealmSwift
 
 class MovieDetailViewController: BaseViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     private enum MovieDetailSections {
         case backdrop
         case description
@@ -92,17 +97,13 @@ extension MovieDetailViewController: UITableViewDataSource {
             cell.titleLabel.text = movie?.title
             cell.ratingLabel.text = String.init(format: "Rating: %.2f", (movie?.voteAverage.value ?? 0.0))
             if let posterPath = movie?.backdropPath, let url = URL.init(string: TMDB.imageBaseURL + posterPath) {
-                LazyImageCache.shared.load(url: url) { (image) in
-                    cell.backdropImageView.image = image
-                }
+                cell.backdropImageView.setImage(from: url)
             }
             else {
                 cell.backdropImageView.image = nil
             }
             if let posterPath = movie?.posterPath, let url = URL.init(string: TMDB.imageBaseURL + posterPath) {
-                LazyImageCache.shared.load(url: url) { (image) in
-                    cell.posterImageView.image = image
-                }
+                cell.posterImageView.setImage(from: url)
             }
             else {
                 cell.posterImageView.image = nil

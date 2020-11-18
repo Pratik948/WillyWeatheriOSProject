@@ -14,9 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if let window = window {
+        if #available(iOS 13, *) {
+            //Do Nothing
+        }
+        else {
+            window = UIWindow.init(frame: UIScreen.main.bounds)
             let navigationController = UINavigationController.init(rootViewController: NowPlayingViewController())
-            window.rootViewController = navigationController
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
         }
         return true
     }

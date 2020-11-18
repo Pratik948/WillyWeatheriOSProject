@@ -9,7 +9,7 @@ import UIKit
 
 class MovieGridCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var posterImageView: AsyncImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!

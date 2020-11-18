@@ -14,6 +14,8 @@
 		E6145812256492BF001D696E /* MovieDetailBackdropTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6145810256492BF001D696E /* MovieDetailBackdropTableViewCell.xib */; };
 		E6145817256494CC001D696E /* MovieDetailOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6145815256494CC001D696E /* MovieDetailOverviewTableViewCell.swift */; };
 		E6145818256494CC001D696E /* MovieDetailOverviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6145816256494CC001D696E /* MovieDetailOverviewTableViewCell.xib */; };
+		E6145902256576C5001D696E /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6145901256576C4001D696E /* AsyncImageView.swift */; };
+		E61459112565B501001D696E /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61459102565B501001D696E /* UINavigationController.swift */; };
 		E61B92BA2564312900F03B59 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92B92564312900F03B59 /* BaseViewController.swift */; };
 		E61B92C32564319700F03B59 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92C22564319700F03B59 /* TMDB.swift */; };
 		E61B92C92564330000F03B59 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92C82564330000F03B59 /* Genre.swift */; };
@@ -41,6 +43,8 @@
 		E6145810256492BF001D696E /* MovieDetailBackdropTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailBackdropTableViewCell.xib; sourceTree = "<group>"; };
 		E6145815256494CC001D696E /* MovieDetailOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailOverviewTableViewCell.swift; sourceTree = "<group>"; };
 		E6145816256494CC001D696E /* MovieDetailOverviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailOverviewTableViewCell.xib; sourceTree = "<group>"; };
+		E6145901256576C4001D696E /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		E61459102565B501001D696E /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		E61B92B92564312900F03B59 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E61B92C22564319700F03B59 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
 		E61B92C82564330000F03B59 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 			path = MovieDetailOverviewTableViewCell;
 			sourceTree = "<group>";
 		};
+		E6145900256576A7001D696E /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				E6145901256576C4001D696E /* AsyncImageView.swift */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
 		E61B92B7256430F400F03B59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +210,7 @@
 			children = (
 				E61B92EE256468E700F03B59 /* UIWindow.swift */,
 				E61B92F125646E7200F03B59 /* UIView.swift */,
+				E61459102565B501001D696E /* UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,6 +249,7 @@
 		E61B92FD2564760600F03B59 /* LazyImage */ = {
 			isa = PBXGroup;
 			children = (
+				E6145900256576A7001D696E /* AsyncImageView */,
 				E61B92FE2564762000F03B59 /* LazyImageCache.swift */,
 			);
 			path = LazyImage;
@@ -405,7 +419,9 @@
 				E61B92DA2564361E00F03B59 /* NetworkManager.swift in Sources */,
 				E61B92EA25645BB400F03B59 /* MoviesResults.swift in Sources */,
 				E61B92C92564330000F03B59 /* Genre.swift in Sources */,
+				E6145902256576C5001D696E /* AsyncImageView.swift in Sources */,
 				E61B92EF256468E700F03B59 /* UIWindow.swift in Sources */,
+				E61459112565B501001D696E /* UINavigationController.swift in Sources */,
 				E6145817256494CC001D696E /* MovieDetailOverviewTableViewCell.swift in Sources */,
 				E61B92BA2564312900F03B59 /* BaseViewController.swift in Sources */,
 			);
@@ -550,7 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSDMP88D4M;
 				INFOPLIST_FILE = WillyWeatheriOSProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSDMP88D4M;
 				INFOPLIST_FILE = WillyWeatheriOSProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,8 +9,8 @@ import UIKit
 
 class MovieDetailBackdropTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var backdropImageView: UIImageView!
-    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var backdropImageView: AsyncImageView!
+    @IBOutlet weak var posterImageView: AsyncImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -22,5 +22,8 @@ class MovieDetailBackdropTableViewCell: UITableViewCell {
         gradientView.colors = [UIColor.black.withAlphaComponent(0), UIColor.black.withAlphaComponent(1)]
         selectionStyle = .none
     }
-    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        separatorInset = UIEdgeInsets.init(top: 0, left: frame.width, bottom: 0, right: 0)
+    }
 }

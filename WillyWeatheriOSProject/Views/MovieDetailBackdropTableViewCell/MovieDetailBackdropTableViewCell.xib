@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hlp-3j-s5K">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hlp-3j-s5K" customClass="AsyncImageView" customModule="WillyWeatheriOSProject" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="hlp-3j-s5K" secondAttribute="height" multiplier="500:281" priority="999" id="sGw-oL-bDE"/>
@@ -49,7 +49,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ve0-FW-WBx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ve0-FW-WBx" customClass="AsyncImageView" customModule="WillyWeatheriOSProject" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="80" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="R6D-9u-4ft"/>
