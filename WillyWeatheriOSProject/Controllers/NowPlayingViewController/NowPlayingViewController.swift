@@ -67,7 +67,7 @@ extension NowPlayingViewController {
     }
     
     private func setAppearance() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         title = "Now Playing"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
@@ -133,12 +133,12 @@ extension NowPlayingViewController {
                     try? realm?.write {
                         realm?.add(newMovies, update: .all)
                     }
-                    if self.nowPlayingMovies == nil {
-                        DispatchQueue.main.async {
-                            self.nowPlayingMovies = realm?.object(ofType: NowPlayingMovies.self, forPrimaryKey: "nowPlayingMoviesResult")
-                            self.observeNewMovies()
-                            self.collectionView.reloadData()
-                        }
+                    DispatchQueue.main.async {
+//                        if self.nowPlayingMovies == nil {
+//                            self.nowPlayingMovies = realm?.object(ofType: NowPlayingMovies.self, forPrimaryKey: "nowPlayingMoviesResult")
+//                            self.observeNewMovies()
+//                            self.collectionView.reloadData()
+//                        }
                     }
                 }
             }
@@ -186,6 +186,13 @@ extension NowPlayingViewController: UICollectionViewDataSource {
 }
 
 extension NowPlayingViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let movie = nowPlayingMovies?.results[indexPath.item] {
+            self.show(MovieDetailViewController.init(movie: movie), sender: nil)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let isPortrait = (UIApplication.shared.statusBarOrientation == .portrait || UIApplication.shared.statusBarOrientation == .portraitUpsideDown)
         let isIPad = UIDevice.current.userInterfaceIdiom == .pad

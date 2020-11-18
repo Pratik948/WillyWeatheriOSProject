@@ -18,7 +18,7 @@ class Movie: Object, Decodable {
     dynamic var title: String?
     dynamic var overview: String?
     dynamic var posterPath: String?
-    dynamic var backdropPathL: String?
+    dynamic var backdropPath: String?
     dynamic var originalLanguage: String?
     dynamic var originalTitle: String?
     dynamic var genreIds: List<Int> = List<Int>()
@@ -32,7 +32,7 @@ class Movie: Object, Decodable {
     enum CodingKeys: String, CodingKey {
         case id, popularity, video, adult, title, overview
         case releaseDate = "release_date"
-        case backdropPathL = "backdrop_pathL"
+        case backdropPath = "backdrop_path"
         case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case genreIds = "genre_ids"
@@ -49,7 +49,7 @@ class Movie: Object, Decodable {
         title = try values.decodeIfPresent(String.self, forKey: .title)
         overview = try values.decodeIfPresent(String.self, forKey: .overview)
         posterPath = try values.decodeIfPresent(String.self, forKey: .posterPath)
-        backdropPathL = try values.decodeIfPresent(String.self, forKey: .backdropPathL)
+        backdropPath = try values.decodeIfPresent(String.self, forKey: .backdropPath)
         originalLanguage = try values.decodeIfPresent(String.self, forKey: .originalLanguage)
         originalTitle = try values.decodeIfPresent(String.self, forKey: .originalTitle)
         releaseDate = try values.decodeIfPresent(String.self, forKey: .releaseDate)

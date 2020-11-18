@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		E614580625648BD0001D696E /* CollectionViewLoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614580425648BD0001D696E /* CollectionViewLoadingFooterView.swift */; };
 		E614580725648BD0001D696E /* CollectionViewLoadingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E614580525648BD0001D696E /* CollectionViewLoadingFooterView.xib */; };
+		E614580C25649168001D696E /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614580B25649168001D696E /* MovieDetailViewController.swift */; };
+		E6145811256492BF001D696E /* MovieDetailBackdropTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614580F256492BF001D696E /* MovieDetailBackdropTableViewCell.swift */; };
+		E6145812256492BF001D696E /* MovieDetailBackdropTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6145810256492BF001D696E /* MovieDetailBackdropTableViewCell.xib */; };
+		E6145817256494CC001D696E /* MovieDetailOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6145815256494CC001D696E /* MovieDetailOverviewTableViewCell.swift */; };
+		E6145818256494CC001D696E /* MovieDetailOverviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6145816256494CC001D696E /* MovieDetailOverviewTableViewCell.xib */; };
 		E61B92BA2564312900F03B59 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92B92564312900F03B59 /* BaseViewController.swift */; };
 		E61B92C32564319700F03B59 /* TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92C22564319700F03B59 /* TMDB.swift */; };
 		E61B92C92564330000F03B59 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B92C82564330000F03B59 /* Genre.swift */; };
@@ -31,6 +36,11 @@
 		401244EA31803B6089ECCBDB /* Pods-WillyWeatheriOSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WillyWeatheriOSProject.release.xcconfig"; path = "Target Support Files/Pods-WillyWeatheriOSProject/Pods-WillyWeatheriOSProject.release.xcconfig"; sourceTree = "<group>"; };
 		E614580425648BD0001D696E /* CollectionViewLoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewLoadingFooterView.swift; path = WillyWeatheriOSProject/Views/CollectionViewLoadingFooterView/CollectionViewLoadingFooterView.swift; sourceTree = SOURCE_ROOT; };
 		E614580525648BD0001D696E /* CollectionViewLoadingFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CollectionViewLoadingFooterView.xib; path = WillyWeatheriOSProject/Views/CollectionViewLoadingFooterView/CollectionViewLoadingFooterView.xib; sourceTree = SOURCE_ROOT; };
+		E614580B25649168001D696E /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		E614580F256492BF001D696E /* MovieDetailBackdropTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailBackdropTableViewCell.swift; sourceTree = "<group>"; };
+		E6145810256492BF001D696E /* MovieDetailBackdropTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailBackdropTableViewCell.xib; sourceTree = "<group>"; };
+		E6145815256494CC001D696E /* MovieDetailOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailOverviewTableViewCell.swift; sourceTree = "<group>"; };
+		E6145816256494CC001D696E /* MovieDetailOverviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailOverviewTableViewCell.xib; sourceTree = "<group>"; };
 		E61B92B92564312900F03B59 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E61B92C22564319700F03B59 /* TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB.swift; sourceTree = "<group>"; };
 		E61B92C82564330000F03B59 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
@@ -90,9 +100,36 @@
 			path = CollectionViewLoadingFooterView;
 			sourceTree = "<group>";
 		};
+		E614580A25649151001D696E /* MovieDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E614580B25649168001D696E /* MovieDetailViewController.swift */,
+			);
+			path = MovieDetailViewController;
+			sourceTree = "<group>";
+		};
+		E614580E2564929F001D696E /* MovieDetailBackdropTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E614580F256492BF001D696E /* MovieDetailBackdropTableViewCell.swift */,
+				E6145810256492BF001D696E /* MovieDetailBackdropTableViewCell.xib */,
+			);
+			path = MovieDetailBackdropTableViewCell;
+			sourceTree = "<group>";
+		};
+		E6145814256494AD001D696E /* MovieDetailOverviewTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E6145815256494CC001D696E /* MovieDetailOverviewTableViewCell.swift */,
+				E6145816256494CC001D696E /* MovieDetailOverviewTableViewCell.xib */,
+			);
+			path = MovieDetailOverviewTableViewCell;
+			sourceTree = "<group>";
+		};
 		E61B92B7256430F400F03B59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E614580A25649151001D696E /* MovieDetailViewController */,
 				E61B92E32564584300F03B59 /* NowPlayingViewController */,
 				E61B92B82564310E00F03B59 /* BaseController */,
 			);
@@ -168,6 +205,8 @@
 		E61B92F5256471B700F03B59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6145814256494AD001D696E /* MovieDetailOverviewTableViewCell */,
+				E614580E2564929F001D696E /* MovieDetailBackdropTableViewCell */,
 				E614580325648BA5001D696E /* CollectionViewLoadingFooterView */,
 				E61B92F6256471CD00F03B59 /* MovieGridCollectionViewCell */,
 			);
@@ -295,9 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6145818256494CC001D696E /* MovieDetailOverviewTableViewCell.xib in Resources */,
 				E61B92FA256471F600F03B59 /* MovieGridCollectionViewCell.xib in Resources */,
 				E695281425642B0F0068B27E /* LaunchScreen.storyboard in Resources */,
 				E695281125642B0F0068B27E /* Assets.xcassets in Resources */,
+				E6145812256492BF001D696E /* MovieDetailBackdropTableViewCell.xib in Resources */,
 				E614580725648BD0001D696E /* CollectionViewLoadingFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,14 +396,17 @@
 				E61B92F9256471F600F03B59 /* MovieGridCollectionViewCell.swift in Sources */,
 				E614580625648BD0001D696E /* CollectionViewLoadingFooterView.swift in Sources */,
 				E695280825642B0E0068B27E /* AppDelegate.swift in Sources */,
+				E614580C25649168001D696E /* MovieDetailViewController.swift in Sources */,
 				E61B92F225646E7200F03B59 /* UIView.swift in Sources */,
 				E695280A25642B0E0068B27E /* SceneDelegate.swift in Sources */,
+				E6145811256492BF001D696E /* MovieDetailBackdropTableViewCell.swift in Sources */,
 				E61B92FF2564762000F03B59 /* LazyImageCache.swift in Sources */,
 				E61B92C32564319700F03B59 /* TMDB.swift in Sources */,
 				E61B92DA2564361E00F03B59 /* NetworkManager.swift in Sources */,
 				E61B92EA25645BB400F03B59 /* MoviesResults.swift in Sources */,
 				E61B92C92564330000F03B59 /* Genre.swift in Sources */,
 				E61B92EF256468E700F03B59 /* UIWindow.swift in Sources */,
+				E6145817256494CC001D696E /* MovieDetailOverviewTableViewCell.swift in Sources */,
 				E61B92BA2564312900F03B59 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
